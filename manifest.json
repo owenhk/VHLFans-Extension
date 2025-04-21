@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "VHLFans",
+  "version": "1.0",
+  "description": "Never do VHL again with VHLFans. VHLFans autofills all activities on VHL Central, including creative writing prompts.",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://m3a.vhlcentral.com/sections/*/activities/*"],
+      "js": ["contentScript.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://app.vhlfans.owensucksat.life/*",
+    "http://127.0.0.1:8000/*"
+  ],
+  "icons": {
+    "32": "VHLGang32.png",
+    "48": "VHLGang48.png",
+    "128": "VHLGang128.png"
+  }
+}
