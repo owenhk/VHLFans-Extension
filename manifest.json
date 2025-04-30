@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "VHLFans",
-  "version": "1.0",
+  "version": "3.0",
   "description": "Never do VHL again with VHLFans. VHLFans autofills all activities on VHL Central, including creative writing prompts.",
   "permissions": [
     "activeTab"
